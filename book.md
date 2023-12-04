@@ -16,5 +16,5 @@
     - online no style https://vivliostyle.vercel.app/#src=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/toc-man/publication.json
     - online with style https://vivliostyle.vercel.app/#src=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/toc-man/publication.json&style=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/toc-man/css/appaloosa.css  
   - CMA 3 test v01
-   - local dev with local style http://127.0.0.1:8000/viewer/#src=../cma3v01/publication.json&style=../cma3v01/css/appaloosa.css
-   - online with style https://vivliostyle.vercel.app/#src=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/cma3v01/publication.json&style=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/cma3v01/css/appaloosa.css 
+    - local dev with local style http://127.0.0.1:8000/viewer/#src=../cma3v01/publication.json&style=../cma3v01/css/appaloosa.css
+    - online with style https://vivliostyle.vercel.app/#src=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/cma3v01/publication.json&style=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/cma3v01/css/appaloosa.css 
