@@ -910,9 +910,20 @@ h1.article-bibliography-header {
     page-break-after: avoid;
   }
   
-  h3 {
+  h3.Decision {
     font-size: 0.9rem; /* 1.209rem */
-    font-family: "Arvo", serif;
+    font-family: "Arvo", serif !important;
+    margin-top: 5pt;
+    page-break-inside: avoid;
+    page-break-after: avoid;
+    font-weight: 500;
+    margin-bottom: 9pt;
+    color: #505050;
+  }
+
+  .Decision {
+    font-size: 0.9rem; /* 1.209rem */
+    font-family: "Arvo", serif !important;
     margin-top: 5pt;
     page-break-inside: avoid;
     page-break-after: avoid;
