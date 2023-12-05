@@ -5,6 +5,7 @@
   - Link TBC
   - Issues
   - How to run Vivlio locally https://docs.google.com/document/d/1mmHGNsNxH3CWkpY1mv3gMN1-zs9L4Fm002CNW79UeiE/edit
+    - ./start-webserver 
 
 ## Publication tests
 
