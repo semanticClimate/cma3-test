@@ -11,7 +11,8 @@
 ## Tests 2023.12.10 SW
 
   - Local - http://127.0.0.1:8000/viewer/#src=../1_4_CMA_3/publication.json&style=../1_4_CMA_3/css/appaloosa.css
-  - Online - https://vivliostyle.vercel.app/#src=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/1_4_CMA_3/publication.json&style=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/1_4_CMA_3/css/appaloosa.css  
+  - Online - https://vivliostyle.vercel.app/#src=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/1_4_CMA_3/publication.json&style=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/1_4_CMA_3/css/appaloosa.css
+    - Online - https://vivliostyle.vercel.app/#src=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/1_4_CMA_3/publication.json&style=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/1_4_CMA_3/css/appaloosa-rq.css   
 
 ## Tests 2023.12.08 SW
 
