@@ -158,6 +158,33 @@
   }
 
 /*Page size*/
+.section {
+  margin-left: 24pt;
+}
+/*  */
+.section:first-of-type {
+  display: none;
+}
+.section div {
+  margin-bottom: 6pt;
+  text-indent: 16pt;
+  font-family: TimesNewRomanPSMT!important;
+}
+/* timesnewromanpsmt_14_0_b */
+/* timesnewromanpsmt_10_0_i */
+span.Decision {
+  font-family: TimesNewRomanPSMT;
+  font-size: 14.04pt;
+  font-weight: bold;
+  color: #000;
+  background-color: transparent!important;
+  margin-bottom: 14pt;  
+}
+
+/* numbers list */
+.section .para {
+  margin-right: 24pt;
+}
 
 @page {
     size: 210mm 297mm;
