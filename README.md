@@ -8,6 +8,13 @@
 
 ./start-viewer
 
+## Tests 2023.12.12 RQ
+
+- In repo 
+  - Local - http://127.0.0.1:8000/viewer/#src=../CMA_3/publication.json&style=../CMA_3/css/appaloosa-rq.css
+  - Online - https://vivliostyle.vercel.app/#src=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/CMA_3/publication.json&style=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/CMA_3/css/appaloosa-rq.css
+- remote (source PMR Pyami) - 
+
 ## Tests 2023.12.11 RQ
 
 - Local - http://127.0.0.1:8000/viewer/#src=../1_4_CMA_3/publication.json&style=../1_4_CMA_3/css/appaloosa-rq.css

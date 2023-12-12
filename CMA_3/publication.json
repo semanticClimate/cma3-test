@@ -12,7 +12,11 @@
       "front_cover.html",
       "imprint.html", 
       "toc_ses_dec_res.html", 
-      "1_4_CMA_3_decis.html",
+      "LEAD/split.html",
+      "Decision_1_CMA_3/split.html",
+      "Decision_2_CMA_3/split.html",
+      "Decision_3_CMA_3/split.html",
+      "Decision_4_CMA_3/split.html",
       "back_cover.html"
     ],
     "resources": [
