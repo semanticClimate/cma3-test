@@ -12,7 +12,11 @@
       "front_cover.html",
       "imprint.html", 
       "toc_ses_dec_res.html", 
-      "1_4_CMA_3_decis.html",
+      "https://raw.githubusercontent.com/petermr/pyamihtml/main/temp/unfccc/unfcccdocuments1/CMA_3/LEAD/split.html",
+      "https://raw.githubusercontent.com/petermr/pyamihtml/main/temp/unfccc/unfcccdocuments1/CMA_3/Decision_1_CMA_3/split.html",
+      "https://raw.githubusercontent.com/petermr/pyamihtml/main/temp/unfccc/unfcccdocuments1/CMA_3/Decision_2_CMA_3/split.html",
+      "https://raw.githubusercontent.com/petermr/pyamihtml/main/temp/unfccc/unfcccdocuments1/CMA_3/Decision_3_CMA_3/split.html",
+      "https://raw.githubusercontent.com/petermr/pyamihtml/main/temp/unfccc/unfcccdocuments1/CMA_3/Decision_4_CMA_3/split.html",
       "back_cover.html"
     ],
     "resources": [
