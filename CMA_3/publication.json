@@ -1,0 +1,45 @@
+{
+    "@context": [
+      "https://schema.org",
+      "https://www.w3.org/ns/pub-context"
+    ],
+    "conformsTo": "https://www.w3.org/TR/pub-manifest/",
+    "type": "Book",
+    "name": "CMA 3 Test",
+    "author": "UNFCCC",
+    "inLanguage": "en",
+    "readingOrder": [
+      "front_cover.html",
+      "imprint.html", 
+      "toc_ses_dec_res.html", 
+      "1_4_CMA_3_decis.html",
+      "back_cover.html"
+    ],
+    "resources": [
+      {
+        "type": "LinkedResource",
+        "url": "toc_toplevel_sum_ses_dec_res.html",
+        "rel": "contents"
+      },
+        {
+            "type": [
+                "LinkedResource"
+            ],
+            "url": "css/appaloosa.css"
+        },
+        {
+          "type": [
+              "LinkedResource"
+          ],
+          "url": "css/mathlive.css"
+      },
+        {
+            "type": [
+                "LinkedResource"
+            ],
+            "url": "css/book.css"
+        }
+      ]
+  }
+
+
