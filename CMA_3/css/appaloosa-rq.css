@@ -131,7 +131,7 @@ content: "_____ ";
 
 @page {
     size: 210mm 297mm;
-    margin-top: 30mm;
+    margin-top: 20mm;
     margin-bottom: 30mm;
   }
 
@@ -167,9 +167,11 @@ content: "_____ ";
   }
   @top-center {
     content: " ";
+    border-bottom: 1px solid black;
   }
   @top-right {
     content: "";
+    border-bottom: 1px solid black;
   }
   @bottom-left {
     content: counter(page) " "" | "" "  env(doc-title);
