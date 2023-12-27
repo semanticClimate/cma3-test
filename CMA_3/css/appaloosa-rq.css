@@ -27,6 +27,7 @@ div {
   color: #000;
   /* margin-left: -16pt!important; */
   background-color: transparent!important;
+  text-align: left!important;
   margin-bottom: 16.15pt/* 24pt */!important; 
 }
 
@@ -35,6 +36,7 @@ div {
   font-size: 14.04pt;
   font-weight: bold;
   color: #000;
+  text-align: left!important;
   margin:24pt 0 24pt -30pt!important;
   background-color: transparent!important;
   display: inline-block;
@@ -54,14 +56,13 @@ div>span.timesnewromanpsmt_10_0_i:first-of-type{
   background-color: transparent!important;
 }
 
-span.para {
+/* span.para {
 text-align: justify!important;
-}
+} */
 .subpara {
   margin-left: 10mm;
   /* display: block; */
   background-color: transparent!important;
-  text-align: justify!important;
 }
 /* subpara in html (a)text not possible to give space*/
 
