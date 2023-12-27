@@ -166,16 +166,21 @@ content: "_____ ";
     margin-top: 10mm;
     margin-bottom: 10mm;
     border-bottom: 1pt solid #000;
+    width: 80%;
   }
   @top-center {
     content: " ";
     margin-top: 10mm;
     margin-bottom: 10mm;
-    border-bottom: 1pt solid #000;
+    border-bottom: 1pt solid red;
+    width: 5%;
   }
   @top-right {
     content: "";
-    border-bottom: 1px solid black;
+    margin-top: 10mm;
+    margin-bottom: 10mm;
+    border-bottom: 1pt solid green;
+    width: 5%;
   }
   @bottom-left {
     content: counter(page) " "" | "" "  env(doc-title);
