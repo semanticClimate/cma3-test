@@ -180,7 +180,7 @@ content: "_____ ";
     margin-top: 10mm;
     margin-bottom: 10mm;
     border-bottom: 1pt solid green;
-    width: 5%;
+    width:5%;
   }
   @bottom-left {
     content: counter(page) " "" | "" "  env(doc-title);
