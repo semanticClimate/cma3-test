@@ -125,23 +125,25 @@ content: "_____ ";
 /*Verso - left page*/ 
 
 @page: left {
-  margin-left: 15mm;
+  margin-left: 20mm;
   margin-right: 20mm;
   @top-left {
     content: "FCCC/PA/CMA/2021/10/Add.1";
     font-family: TimesNewRomanPSMT;
     font-weight: bold;
-    margin-top: 10mm;
-    margin-bottom: 10mm;
+    font-size: 9pt;
+    letter-spacing: -0.02pt;
+    margin-top: 15mm;
+    margin-bottom: 5mm;
     border-bottom: 1pt solid #000;
+    color: #000;
   }
   @bottom-left {
     content: counter(page);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.4;
-    color: #000000;
-    letter-spacing: 0.1pt;
+    font-weight: bold;
+    font-size: 9pt;
+    color: #000;
+    line-height: 1.2;
     }
   }
 
@@ -149,23 +151,26 @@ content: "_____ ";
 
 @page: right {
   margin-left: 20mm;
-  margin-right: 15mm;
+  margin-right: 20mm;
   @top-right {
      content: "FCCC/PA/CMA/2021/10/Add.1";
      font-family: TimesNewRomanPSMT;
      font-weight: bold;
-     margin-top: 10mm;
-     margin-bottom: 10mm;
+     font-size: 9pt;
+     letter-spacing: -0.02pt;
+     color: #000;
+     margin-top: 15mm;
+     margin-bottom: 5mm;
      border-bottom: 1pt solid #000;
   }
   
   @bottom-right {
     content: counter(page);
     font-family: TimesNewRomanPSMT;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.4;
-    color: #000000;
+    font-weight: bold;
+    font-size: 9pt;
+    color: #000;
+    line-height: 1.2;
   }
 }
 
@@ -189,7 +194,9 @@ html {
     overflow-wrap: break-word;
     word-wrap: break-word;
   }
-html body { background-color: transparent!important;}
+html body { 
+  background-color: transparent!important;
+  color: #000;}
 body {
     counter-reset: chapter figure-cat-figure figure-cat-photo figure-cat-table footnote-counter footnote-marker-counter;
     overflow-wrap: break-word;
