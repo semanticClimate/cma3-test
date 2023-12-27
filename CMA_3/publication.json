@@ -5,26 +5,20 @@
     ],
     "conformsTo": "https://www.w3.org/TR/pub-manifest/",
     "type": "Book",
-    "name": "CMA 3 Test",
-    "author": "UNFCCC",
+    "name": "Report of the Conference of the Parties serving as the meeting of the Parties to the Paris Agreement on its third session, held in Glasgow from 31 October to 13 November 2021",
+    "author": "United Nations Framework Convention on Climate Change (UNFCCC)",
     "inLanguage": "en",
-    "readingOrder": [
-      "front_cover.html",
-      "imprint.html", 
-      "toc_ses_dec_res.html", 
-      "LEAD/split.html",
+    "readingOrder": [ 
+      {
+        "url": "LEAD/split.html",
+        "rel": "contents"
+      },
       "Decision_1_CMA_3/split.html",
       "Decision_2_CMA_3/split.html",
       "Decision_3_CMA_3/split.html",
-      "Decision_4_CMA_3/split.html",
-      "back_cover.html"
+      "Decision_4_CMA_3/split.html"
     ],
     "resources": [
-      {
-        "type": "LinkedResource",
-        "url": "toc_toplevel_sum_ses_dec_res.html",
-        "rel": "contents"
-      },
         {
             "type": [
                 "LinkedResource"

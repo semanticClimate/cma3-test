@@ -158,18 +158,11 @@
   }
 
 /*Page size*/
-/* .div {
-  margin-left: 24pt;
-  position: relative;
-} */
-/*  */
-.section:first-of-type {
-  display: none;
-}
-/* .section */ div {
+
+div {
   margin-bottom: 8pt!important;
   margin-left: 24pt!important;
-  text-indent: 16pt;
+  /* text-indent: 16pt; */
   font-family: TimesNewRomanPSMT!important;
 }
 .timesnewromanpsmt_14_0_b {
@@ -177,36 +170,42 @@
   margin-bottom: 24pt!important; 
 }
 /* timesnewromanpsmt_10_0_i */
-div span.Decision {
+.Decision {
   font-family: TimesNewRomanPSMT;
   font-size: 14.04pt;
   font-weight: bold;
   color: #000;
-  margin-left: -16pt!important;
+  /* margin-left: -16pt!important; */
   background-color: transparent!important;
   margin-bottom: 24pt!important; 
 }
 
-div>span.subchapter, div>span.chapter {
+.subchapter, .chapter {
   font-family: TimesNewRomanPSMT;
   font-size: 14.04pt;
   font-weight: bold;
   color: #000;
-  margin:24pt 0 24pt -34pt!important;
+  margin:24pt 0 24pt -30pt!important;
   background-color: transparent!important;
   display: inline-block;
 }
+div > span.chapter + .subchapter {
+  margin:0pt 0 24pt -30pt!important;
+}
 
+div>span.timesnewromanpsmt_10_0_i:first-of-type{
+  margin-left: 26pt;
+}
 
 /* numbers list */
 .para {
-  margin-right: 24pt;
+  margin-right: 18pt;
   background-color: transparent!important;
 }
 
 .subpara {
   margin-left: 26pt;
-  display: block;
+  /* display: block; */
   background-color: transparent!important;
 }
 /* subpara in html (a)text not possible to give space*/
@@ -220,7 +219,8 @@ div>span.subchapter, div>span.chapter {
 .timesnewromanpsmt_6_0 {
   vertical-align: super;
   margin-right: 4pt;
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-size: 9pt;
 }
  .timesnewromanpsmt_6_0:before{
   content:" ";
@@ -238,28 +238,29 @@ content: "_____ ";
   content: "------------------";
   display: block;
   } */
-body>div>.timesnewromanpsmt_6_0+.timesnewromanpsmt_9_0 {
-  margin-left: 0!important;
-  text-indent:0!important;
-  background-color: violet;
-  }
+/*body>div>.timesnewromanpsmt_6_0+.timesnewromanpsmt_9_0 {
+   background-color: violet; 
+  }*/
+  .timesnewromanpsmt_9_0, .timesnewromanpsmt_9_0_i {
+    font-size:9pt!important;
+    }
 
 @page {
     size: 210mm 297mm;
-    margin-top: 20mm;
+    margin-top: 30mm;
     margin-bottom: 30mm;
   }
 
  /*Cover*/ 
-  
-  @page: first {
+ 
+ @page: first {
     /*size: 210mm 297mm;*/ 
-    background-image: linear-gradient(#F5F4EF,#F5F4EF 73%,#56ACF6, #9dcef8 27%);
+    background-image: linear-gradient(#F5F4EF,#F5F4EF 73%);
     background-size: 210mm 297mm;
     display: flex;
     /*margin-top: 30mm;*/ 
     color: #FA7268;
-    page-break-after: always;
+     /*page-break-after: always;*/ 
     @bottom-left { content: normal; }
     @bottom-center { content: normal; }
     @bottom-right { content: normal; }
@@ -267,7 +268,8 @@ body>div>.timesnewromanpsmt_6_0+.timesnewromanpsmt_9_0 {
     @top-right { content: normal;}
     @top-center { content: normal;}
   }
-
+  
+  
 /*Verso - left page*/ 
 
 @page: left {
@@ -544,8 +546,8 @@ body {
   }
   nav {
     margin: 2em 0;
-    break-before: always;
-    page-break-before: always;
+    /*break-before: always;*/
+    /*page-break-before: always;*/
     width: 80%;
     font-family: "Roboto Slab", sans-serif;
   }
@@ -646,7 +648,7 @@ div.titlepage {
     background-position: 0% 0%;
     padding-top: 0.5em;
     color: #000000;
-    content:" ";/*here goes text*/
+    content:" "; /*here goes text*/
     font-size: 18px;
   }
   

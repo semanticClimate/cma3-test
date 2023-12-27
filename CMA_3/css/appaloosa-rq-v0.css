@@ -158,11 +158,16 @@
   }
 
 /*Page size*/
-
-div {
-  margin-bottom: 8pt!important;
-  margin-left: 24pt!important;
-  /* text-indent: 16pt; */
+.section {
+  margin-left: 24pt;
+}
+/*  */
+.section:first-of-type {
+  display: none;
+}
+.section div {
+  margin-bottom: 6pt;
+  text-indent: 16pt;
   font-family: TimesNewRomanPSMT!important;
 }
 .timesnewromanpsmt_14_0_b {
@@ -170,84 +175,36 @@ div {
   margin-bottom: 24pt!important; 
 }
 /* timesnewromanpsmt_10_0_i */
-.Decision {
+.section div span.Decision {
   font-family: TimesNewRomanPSMT;
   font-size: 14.04pt;
   font-weight: bold;
   color: #000;
-  /* margin-left: -16pt!important; */
+  margin-left: -16pt!important;
   background-color: transparent!important;
   margin-bottom: 24pt!important; 
 }
 
-.subchapter, .chapter {
+.section>div>span.subchapter, .section>div>span.chapter {
   font-family: TimesNewRomanPSMT;
   font-size: 14.04pt;
   font-weight: bold;
   color: #000;
-  margin:24pt 0 24pt -30pt!important;
+  margin:24pt 0 24pt -34pt!important;
   background-color: transparent!important;
   display: inline-block;
 }
-div > span.chapter + .subchapter {
-  margin:0pt 0 24pt -30pt!important;
-}
 
-div>span.timesnewromanpsmt_10_0_i:first-of-type{
-  margin-left: 26pt;
-}
 
 /* numbers list */
-.para {
-  margin-right: 18pt;
+.section .para {
+  margin-right: 24pt;
   background-color: transparent!important;
 }
-
-.subpara {
-  margin-left: 26pt;
-  /* display: block; */
-  background-color: transparent!important;
-}
-/* subpara in html (a)text not possible to give space*/
-
-.subsubpara{
-  margin-left: 26pt;
-  display: block;
-  background-color: transparent!important;
-}
-/* Footnotes */
-.timesnewromanpsmt_6_0 {
-  vertical-align: super;
-  margin-right: 4pt;
-  /* font-weight: bold; */
-  font-size: 9pt;
-}
- .timesnewromanpsmt_6_0:before{
-  content:" ";
-} 
-.timesnewromanpsmt_6_0+.timesnewromanpsmt_9_0:after{
-  content: "";
-  display: block;
-  
-} 
-
-.timesnewromanpsmt_6_0+.timesnewromanpsmt_9_0:before {
-content: "_____ ";
-}
-/* body>div>.timesnewromanpsmt_6_0+.timesnewromanpsmt_9_0:before  {
-  content: "------------------";
-  display: block;
-  } */
-/*body>div>.timesnewromanpsmt_6_0+.timesnewromanpsmt_9_0 {
-   background-color: violet; 
-  }*/
-  .timesnewromanpsmt_9_0, .timesnewromanpsmt_9_0_i {
-    font-size:9pt!important;
-    }
 
 @page {
     size: 210mm 297mm;
-    margin-top: 30mm;
+    margin-top: 20mm;
     margin-bottom: 30mm;
   }
 
@@ -272,78 +229,71 @@ content: "_____ ";
 /*Verso - left page*/ 
 
 @page: left {
-  margin-left: 15mm;
-  margin-right: 20mm;
-  @top-left {
-    content: "FCCC/PA/CMA/2021/10/Add.1";
-    font-family: TimesNewRomanPSMT;
-    font-weight: bold;
-  }
-  @top-center {
-    content: " ";
-  }
-  @top-right {
-    content: "";
-  }
-  @bottom-left {
-    content: counter(page) " "" | "" "  env(doc-title);
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.4;
-    color: #000000;
-    letter-spacing: 0.1pt;
-    /*word-spacing: 1px;*/
-    background-image: linear-gradient(45deg, #FA7268,#FA7268);
-    background-repeat: no-repeat;
-    background-size: 80px 9px;
-    background-position: 0 55%;
-    padding-top: 20px;
-    vertical-align: top;
-    width: 75%;
+    margin-left: 15mm;
+    margin-right: 20mm;
+    @top-left {
+      content: " ";
     }
-    @bottom-center {
-        content: " ";
-        width: 10%;
+    @top-center {
+      content: " ";
+    }
+    @bottom-left {
+      content: counter(page) " "" | "" "  env(doc-title);
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.4;
+      color: #000000;
+      letter-spacing: 0.1pt;
+      /*word-spacing: 1px;*/
+      background-image: linear-gradient(45deg, #FA7268,#FA7268);
+      background-repeat: no-repeat;
+      background-size: 80px 9px;
+      background-position: 0 55%;
+      padding-top: 20px;
+      vertical-align: top;
+      width: 75%;
       }
-      @bottom-right { width: 15%; }
-  }
+      @bottom-center {
+          content: " ";
+          width: 10%;
+        }
+        @bottom-right { width: 15%; }
+    }
 
-  /*Recto - right page*/
-
+    /*Recto - right page*/
+  
 @page: right {
-  margin-left: 20mm;
-  margin-right: 15mm;
-  @top-right {
-     content: "FCCC/PA/CMA/2021/10/Add.1";
-     font-family: TimesNewRomanPSMT;
-     font-weight: bold;
+    margin-left: 20mm;
+    margin-right: 15mm;
+    @top-right {
+       content: "";
+    }
+    @top-center {
+      content: " ";
+    }
+    @bottom-left { width: 15%; }
+    @bottom-center {
+      content: " ";
+      width: 10%;
+    }
+    @bottom-right {
+      content: string(chapter-title, start) " "" | "" " counter(page);
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.4;
+      color: #000000;
+      letter-spacing: 0.1pt;
+      background-image: linear-gradient(45deg, #FA7268,#FA7268);
+      background-repeat: no-repeat;
+      background-size: 80px 9px;
+      background-position: 100% 55%;
+      padding-top: 20px;
+      vertical-align: top;
+      width: 75%;
+    }
   }
-  @top-center {
-    content: " ";
-  }
-  @bottom-left { width: 15%; }
-  @bottom-center {
-    content: " ";
-    width: 10%;
-  }
-  @bottom-right {
-    content: string(chapter-title, start) " "" | "" " counter(page);
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.4;
-    color: #000000;
-    letter-spacing: 0.1pt;
-    background-image: linear-gradient(45deg, #FA7268,#FA7268);
-    background-repeat: no-repeat;
-    background-size: 80px 9px;
-    background-position: 100% 55%;
-    padding-top: 20px;
-    vertical-align: top;
-    width: 75%;
-  }
-}
 
 /*Blank page*/ 
  
