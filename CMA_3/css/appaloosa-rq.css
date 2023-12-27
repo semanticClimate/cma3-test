@@ -131,7 +131,7 @@ content: "_____ ";
 
 @page {
     size: 210mm 297mm;
-    margin-top: 20mm;
+    margin-top: 30mm;
     margin-bottom: 30mm;
   }
 
@@ -163,7 +163,12 @@ content: "_____ ";
     content: "FCCC/PA/CMA/2021/10/Add.1";
     font-family: TimesNewRomanPSMT;
     font-weight: bold;
-    border-bottom: 1px solid black;
+    background-image: linear-gradient(45deg, #000,#000);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 55%;
+    padding-top: 20px;
+    vertical-align: top;
   }
   @top-center {
     content: " ";
