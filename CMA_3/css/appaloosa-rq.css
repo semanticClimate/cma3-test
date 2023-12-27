@@ -163,12 +163,9 @@ content: "_____ ";
     content: "FCCC/PA/CMA/2021/10/Add.1";
     font-family: TimesNewRomanPSMT;
     font-weight: bold;
-    background-image: linear-gradient(45deg, #000,#000);
-    background-repeat: no-repeat;
-    background-size: 1%;
-    background-position: 0 55%;
-    padding-top: 20px;
-    vertical-align: top;
+    margin-top: 10mm;
+    margin-bottom: 4mm;
+    border-bottom: 2pt solid #000;
   }
   @top-center {
     content: " ";
