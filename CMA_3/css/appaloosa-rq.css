@@ -50,9 +50,11 @@ div>span.timesnewromanpsmt_10_0_i:first-of-type{
 .para {
   margin-right: 18pt;
   background-color: transparent!important;
-  text-align: justify!important;
 }
 
+span.para {
+text-align: justify!important;
+}
 .subpara {
   margin-left: 26pt;
   /* display: block; */
