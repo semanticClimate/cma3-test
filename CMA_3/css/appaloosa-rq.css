@@ -149,8 +149,6 @@ content: "_____ ";
     @bottom-center { content: normal; }
     @bottom-right { content: normal; }
     @top-left { content: normal; }
-    @top-right { content: normal;}
-    @top-center { content: normal;}
   }
   
   
@@ -166,21 +164,6 @@ content: "_____ ";
     margin-top: 10mm;
     margin-bottom: 10mm;
     border-bottom: 1pt solid #000;
-    width: 90%;
-  }
-  @top-center {
-    content: " ";
-    margin-top: 10mm;
-    margin-bottom: 10mm;
-    border-bottom: 1pt solid red;
-    width: 5%;
-  }
-  @top-right {
-    content: "";
-    margin-top: 10mm;
-    margin-bottom: 10mm;
-    border-bottom: 1pt solid green;
-    width:5%;
   }
   @bottom-left {
     content: counter(page) " "" | "" "  env(doc-title);
@@ -317,23 +300,7 @@ body {
     flex: none;
     order: 2;
   }
-  @page {
-    size: A4;
-    @top-center {
-      content: env(doc-title);
-    }
-    @bottom-center {
-      content: counter(page);
-    }
-  }
-  @page :first {
-    @bottom-center {
-      content: normal;
-    }
-    @top-center {
-      content: normal;
-    }
-  }
+  
   figure img {
     max-width: 100%;
   }
