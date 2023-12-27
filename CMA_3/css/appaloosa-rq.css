@@ -1,45 +1,11 @@
 /*Appaloosa (Report) - publication style: Version: 10 Dec 2023 RQ
 
 /*body*/
-
-
-    /*Headers ALT #1*/
-  
-    @font-face {
-      font-family: "Arvo";
-      font-weight: bold;
-      font-style: normal;
-      src: local('Arvo Bold'), local('Arvo-Bold'), url(media/Arvo-Bold.ttf) format('truetype');
-      }
-    
-      @font-face {
-        font-family: "Arvo";
-        font-weight: 600;
-        font-style: normal;
-        src: local('Arvo Bold'), local('Arvo-Bold'), url(media/Arvo-Bold.ttf) format('truetype');
-    }
-    
-    @font-face {
-        font-family: "Arvo";
-        font-weight: 500;
-        font-style: normal;
-        src: local('Arvo Bold'), local('Arvo-Bold'), url(media/Arvo-Bold.ttf) format('truetype');
-    }
-    
-    @font-face {
-        font-family: "Arvo";
-        font-weight: 400;
-        font-style: normal;
-        src: local('Arvo Regular'), local('Arvo-Regular'), url(media/Arvo-Regular.ttf) format('truetype');
-    }
-  
-  /*Secondary headers*/
- 
   *{
     font-family: TimesNewRomanPSMT;
   }
 
-/*Page size*/
+
 
 div {
   margin-bottom: 8pt!important;
@@ -128,7 +94,7 @@ content: "_____ ";
   .timesnewromanpsmt_9_0, .timesnewromanpsmt_9_0_i {
     font-size:9pt!important;
     }
-
+/*Page size*/
 @page {
     size: 210mm 297mm;
     margin-top: 30mm;
@@ -137,18 +103,17 @@ content: "_____ ";
 
  /*Cover*/ 
  
- @page: first {
-    /*size: 210mm 297mm;*/ 
+ @page: first { 
     background-image: linear-gradient(#F5F4EF,#F5F4EF 73%);
     background-size: 210mm 297mm;
     display: flex;
     /*margin-top: 30mm;*/ 
     color: #FA7268;
      /*page-break-after: always;*/ 
-    @bottom-left { content: normal; }
-    @bottom-center { content: normal; }
-    @bottom-right { content: normal; }
-    @top-left { content: normal; }
+    @bottom-left { content: ""; }
+    @bottom-center { content: ""; }
+    @bottom-right { content: ""; }
+    @top-left { content: ""; }
   }
   
   
@@ -173,20 +138,7 @@ content: "_____ ";
     line-height: 1.4;
     color: #000000;
     letter-spacing: 0.1pt;
-    /*word-spacing: 1px;*/
-    background-image: linear-gradient(45deg, #FA7268,#FA7268);
-    background-repeat: no-repeat;
-    background-size: 80px 9px;
-    background-position: 0 55%;
-    padding-top: 20px;
-    vertical-align: top;
-    width: 75%;
     }
-    @bottom-center {
-        content: " ";
-        width: 10%;
-      }
-      @bottom-right { width: 15%; }
   }
 
   /*Recto - right page*/
@@ -198,30 +150,18 @@ content: "_____ ";
      content: "FCCC/PA/CMA/2021/10/Add.1";
      font-family: TimesNewRomanPSMT;
      font-weight: bold;
+     margin-top: 10mm;
+     margin-bottom: 10mm;
+     border-bottom: 1pt solid #000;
   }
-  @top-center {
-    content: " ";
-  }
-  @bottom-left { width: 15%; }
-  @bottom-center {
-    content: " ";
-    width: 10%;
-  }
+  
   @bottom-right {
     content: string(chapter-title, start) " "" | "" " counter(page);
-    font-family: "Inter", sans-serif;
+    font-family: TimesNewRomanPSMT;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.4;
     color: #000000;
-    letter-spacing: 0.1pt;
-    background-image: linear-gradient(45deg, #FA7268,#FA7268);
-    background-repeat: no-repeat;
-    background-size: 80px 9px;
-    background-position: 100% 55%;
-    padding-top: 20px;
-    vertical-align: top;
-    width: 75%;
   }
 }
 
@@ -396,10 +336,6 @@ body {
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
-  }
-  .copyrightpage p {
-    font-family: "Inter", sans-serif;
-    color: #000000;
   }
   nav::before {
     font-family: "Arvo", serif;
