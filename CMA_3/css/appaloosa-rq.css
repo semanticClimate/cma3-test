@@ -50,13 +50,14 @@ div>span.timesnewromanpsmt_10_0_i:first-of-type{
 .para {
   margin-right: 18pt;
   background-color: transparent!important;
-  text-align: justify;
+  text-align: justify!important;
 }
 
 .subpara {
   margin-left: 26pt;
   /* display: block; */
   background-color: transparent!important;
+  text-align: justify!important;
 }
 /* subpara in html (a)text not possible to give space*/
 
@@ -64,6 +65,7 @@ div>span.timesnewromanpsmt_10_0_i:first-of-type{
   margin-left: 26pt;
   display: block;
   background-color: transparent!important;
+  text-align: justify!important;
 }
 /* Footnotes */
 .timesnewromanpsmt_6_0 {
