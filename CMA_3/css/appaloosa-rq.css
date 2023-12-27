@@ -10,6 +10,7 @@
 div {
   margin-bottom: 6pt!important;
   margin-left: 20mm!important;
+  margin-right: 20mm!important;
   font-family: TimesNewRomanPSMT!important;
   text-align: justify;
 }
@@ -26,7 +27,7 @@ div {
   color: #000;
   /* margin-left: -16pt!important; */
   background-color: transparent!important;
-  margin-bottom: 24pt!important; 
+  margin-bottom: 16.15pt/* 24pt */!important; 
 }
 
 .subchapter, .chapter {
@@ -44,12 +45,12 @@ div > span.chapter + .subchapter {
 
 
 div>span.timesnewromanpsmt_10_0_i:first-of-type{
-  margin-left: 26pt;
+  margin-left: 10mm/* 26pt */;
 }
 
 /* numbers list */
 .para {
-  margin-right: 18pt;
+  margin-right: 10mm/* 18pt */;
   background-color: transparent!important;
 }
 
@@ -57,7 +58,7 @@ span.para {
 text-align: justify!important;
 }
 .subpara {
-  margin-left: 26pt;
+  margin-left: 10mm;
   /* display: block; */
   background-color: transparent!important;
   text-align: justify!important;
@@ -65,7 +66,7 @@ text-align: justify!important;
 /* subpara in html (a)text not possible to give space*/
 
 .subsubpara{
-  margin-left: 26pt;
+  margin-left: 10mm;
   display: block;
   background-color: transparent!important;
   text-align: justify!important;
@@ -97,7 +98,7 @@ content: "_____ ";
    background-color: violet; 
   }*/
   .timesnewromanpsmt_9_0, .timesnewromanpsmt_9_0_i {
-    font-size:9pt!important;
+    font-size:9.96pt!important;
     }
 /*Page size*/
 @page {
@@ -187,16 +188,14 @@ content: "_____ ";
 /*HTML basics*/ 
 
 html {
-    font-size: 18px;
-    font-weight: 300;
+    /* font-size: 18px;
+    font-weight: 300; */
     color: #000000;
     text-rendering: optimizeLegibility;
     overflow-wrap: break-word;
     word-wrap: break-word;
   }
-html body { 
-  background-color: transparent!important;
-  color: #000;}
+html body { background-color: transparent!important;}
 body {
     counter-reset: chapter figure-cat-figure figure-cat-photo figure-cat-table footnote-counter footnote-marker-counter;
     overflow-wrap: break-word;
