@@ -163,6 +163,7 @@ content: "_____ ";
     content: "FCCC/PA/CMA/2021/10/Add.1";
     font-family: TimesNewRomanPSMT;
     font-weight: bold;
+    border-bottom: 1px solid black;
   }
   @top-center {
     content: " ";
