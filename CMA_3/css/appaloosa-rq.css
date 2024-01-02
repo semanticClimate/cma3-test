@@ -112,7 +112,7 @@ content: "_____ ";
       text-indent: 0;
   }
   
-  .footnote::footnote-marker {
+  .timesnewromanpsmt_6_0::footnote-marker {
       content: counter(footnote);
       font-size: 8pt;
       vertical-align: super;
