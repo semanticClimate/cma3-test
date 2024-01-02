@@ -73,10 +73,10 @@ text-align: justify!important;
   text-align: justify!important;
 }
 /* Footnotes */
-.timesnewromanpsmt_6_0 {
+/* .timesnewromanpsmt_6_0 {
   vertical-align: super;
   margin-right: 4pt;
-  /* font-weight: bold; */
+ 
   font-size: 9pt;
 }
  .timesnewromanpsmt_6_0:before{
@@ -90,7 +90,7 @@ text-align: justify!important;
 
 .timesnewromanpsmt_6_0+.timesnewromanpsmt_9_0:before {
 content: "_____ ";
-}
+} */
 /* body>div>.timesnewromanpsmt_6_0+.timesnewromanpsmt_9_0:before  {
   content: "------------------";
   display: block;
@@ -100,7 +100,31 @@ content: "_____ ";
   }*/
   .timesnewromanpsmt_9_0, .timesnewromanpsmt_9_0_i {
     font-size:9.96pt!important;
+    float: footnote;
+      font-size: 8pt;
+      counter-increment: footnote;
+      text-indent: 0;
     }
+    .footnote {
+      float: footnote;
+      font-size: 8pt;
+      counter-increment: footnote;
+      text-indent: 0;
+  }
+  
+  .footnote::footnote-marker {
+      content: counter(footnote);
+      font-size: 8pt;
+      vertical-align: super;
+  }
+  
+  .footnote::footnote-call {
+      content: counter(footnote);
+      font-size: 8pt;
+      vertical-align: super;
+      display: inline;
+      line-height: 1;
+  }
 /*Page size*/
 @page {
     size: 210mm 297mm;
@@ -198,13 +222,13 @@ html {
   }
 html body { background-color: transparent!important;}
 body {
-    counter-reset: chapter figure-cat-figure figure-cat-photo figure-cat-table footnote-counter footnote-marker-counter;
-    overflow-wrap: break-word;
   }
+
+
 
   /*from body*/ 
 
-  a.fn {
+ /*  a.fn {
     -adapt-template: url(data:application/xml,%3Chtml%20xmlns=%22http://www.w3.org/1999/xhtml%22%20xmlns:s=%22http://www.pyroxy.com/ns/shadow%22%3E%3Chead%3E%3Cstyle%3E.footnote-content%7Bfloat:footnote%7D%3C/style%3E%3C/head%3E%3Cbody%3E%3Cs:template%20id=%22footnote%22%3E%3Cs:content/%3E%3Cs:include%20class=%22footnote-content%22/%3E%3C/s:template%3E%3C/body%3E%3C/html%3E#footnote);
     text-decoration: none;
     color: inherit;
@@ -212,11 +236,11 @@ body {
     font-size: 70%;
     position: relative;
     top: -0.3em;
-  }
+  } */
   body {
     background-color: white;
   }
-  section[role=doc-footnote] .footnote-counter:after {
+  /* section[role=doc-footnote] .footnote-counter:after {
     content: ". ";
   }
   section.fnlist {
@@ -227,7 +251,7 @@ body {
     font-style: normal;
     font-weight: normal;
     text-decoration: none;
-  }
+  } */
  
    /*from body*/ 
   
@@ -242,68 +266,6 @@ body {
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
-  }
-  nav::before {
-    font-family: "Arvo", serif;
-    font-size: 55px;
-    color: #FA7268;
-    font-weight: 600;
-  }
-  nav {
-    margin: 2em 0;
-    /*break-before: always;*/
-    /*page-break-before: always;*/
-    width: 80%;
-    font-family: "Roboto Slab", sans-serif;
-  }
-  nav ol {
-    margin-top: 2em;
-    list-style: none;
-  }
-  nav li a {
-    display: inline-flex;
-    width: 100%;
-    text-decoration: none;
-    color: currentColor;
-    align-items: baseline;
-    border: none;
-    /*font-size: 9pt;*/
-    border-bottom: 1px solid;
-    line-height: 1.8em;
-  }
-  /*nav li a:hover {
-    border-bottom: 0px;
-  }*/
-  nav li a::before {
-    margin-right: 0.5em;
-    /*border-bottom: 1px dotted;*/
-    content: "";
-    order: 1;
-    flex: auto;
-  }
-  nav li {
-    font-weight: 500;
-  }
-  
-  nav li ol {
-    margin-top: 0.5em;
-  }
-  
-  nav li ol li {
-    padding-left: 1.2em;
-    font-weight: 300;
-  }
-  
-  nav li ol li ol li ol li {
-    display: none;
-  }
-  
-  nav li a::after {
-   text-align: right;
-   content: target-counter(attr(href), page);
-   align-self: flex-end;
-   flex: none;
-   order: 2;
   }
 
 /*Docsify*/
@@ -420,22 +382,6 @@ h1.part:before {
     content:"";
   }
 
-.csl-entry {
-    font-family: "Inter", sans-serif;
-    font-weight: 300;
-    font-size:  0.8837rem;
-    line-height: 1.37;
-    margin-bottom: 9pt;
-    /*letter-spacing: 0.2pt;
-    word-spacing: 0.2pt;*/
-  }
-
-.article-body > figure.image-width-100 {
-    margin-left: -170px;
-    width: auto !important;
-  }
-  
-
   p {
     font-size:  0.8837rem; /* 0.8837rem */
     line-height: 1.37; /* 1.3954rem */
@@ -450,28 +396,6 @@ h1.part:before {
   p + p {
     text-indent: 0;
     margin-top: 9pt; }
-  
-  div.table-cell-container p + p {
-    margin-top: 0pt;}
-  
-  li p {
-     display: inline;
-  }
-  a, .csl-bib-body a {
-    color: #000000;
-    text-decoration: none !important;
-    border-bottom: 1px dashed rgb(101,100,98);
-  }
-  
-  a:hover {
-    border-bottom: 1px solid rgb(101,100,98);
-  }
-  
-  strong em {
-    font-weight: bold;
-    font-style: italic;
-  }
- 
   
   sup {
     font-size: 9.75pt;
@@ -622,45 +546,6 @@ h1.part:before {
     margin-left: 1.3pc;
   }
   
-  a.footnoteRef {
-    border-bottom: 0;
-    line-height: 0;
-    background: none;
-    display: inline;
-  }
-  
-  figure {
-    text-indent: 0;
-    width: 100%;
-    text-align: center;
-    margin-top: 27pt;
-    margin-bottom: 27pt;
-  }
-  
-  figure img {
-    display: block;
-    height: auto;
-    margin: auto;
-  }
-
-  img {
-    max-width:100% !important;
-    height:auto !important;
-}
-  
-  figure figcaption {
-    font-family: "Inter", sans-serif;
-    margin: 8px 0;
-    font-weight: 300;
-    font-size:  0.82rem;
-    line-height: 1.37;
-    text-indent: 0;
-    text-align: left;
-  }
-  
-  .label-counter {
-    font-weight: 700;
-  }
 
   /*From Fidus writer*/
 
@@ -708,78 +593,9 @@ h1.part:before {
 
 
   @media print {
-    a {
-      color: #000000;
-      text-decoration: none !important;
-      border-bottom: 1px dotted rgb(101,100,98);
-    }
   
     @page {
       size: 210mm 297mm;
     }
   
   }
-  
-  @media screen and (min-width: 400px) and (max-width: 700px) {
-      .article-body, section.fnlist , h1.article-bibliography-header, div.csl-bib-body, .article-body > figure.image-width-100, .article-body > table.table-100.table-fixed, blockquote  {
-       margin-left: 0px!important;
-      }
-      .article-body {
-        margin-top: 15px;
-      }
-      .article-title, h1.part, nav::before {
-       max-width: 100%;
-       font-size: 40px;
-      }
-      nav {
-       width: 100%;
-       font-size: 0.7rem;
-      }
-      nav li a {
-       line-height: 1.2em;
-      }
-  
-  }
-
-  /* EPUB overwrites */
-
-   .epub .article-body {
-     margin-top: 15px;
-   }
-  
-   .epub .article-body p {
-     text-align: left;
-   }
-  
-   .epub .article-body, .epub section.fnlist , .epub h1.article-bibliography-header, .epub div.csl-bib-body, .epub .article-body > figure.image-width-100, .epub .article-body > table.table-100.table-fixed, .epub blockquote  {
-    margin-left: 0px!important;
-  }
-   .epub .article-title, .epub h1.part, .epub nav::before {
-    max-width: 100%;
-    font-size: 40px;
-  }
-  .epub nav {
-    width: 100%;
-    font-size: 0.7rem;
-  }
-  .epub nav li a {
-    line-height: 1.2em;
-  }
-  .epub .figure-cat-figure + span::before, .epub .figure-cat-photo + span::before, .epub .figure-cat-table + span::before {
-      content: ' ';
-  }
-  
-  /*section[role=doc-endnotes]:first-of-type::before {
-      content: 'Footnotes';
-      display: block;
-      font-family: "Inter", sans-serif;
-      font-size: 1.395rem;
-      color:#000000;
-      font-weight: 600;
-      border-bottom: 1px solid black;
-      height: 2em;
-      margin-bottom: 1em;
-    }*/
-  /*.epub nav li a:hover {
-    border-bottom: 1px solid;
-  }*/
