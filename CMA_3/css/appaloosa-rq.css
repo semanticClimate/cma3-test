@@ -118,7 +118,7 @@ content: "_____ ";
       vertical-align: super;
   }
   
-  .footnote::footnote-call {
+  .timesnewromanpsmt_9_0::footnote-call {
       content: counter(footnote);
       font-size: 8pt;
       vertical-align: super;
