@@ -73,12 +73,12 @@ text-align: justify!important;
   text-align: justify!important;
 }
 /* Footnotes */
-/* .timesnewromanpsmt_6_0 {
+ .timesnewromanpsmt_6_0 {
   vertical-align: super;
   margin-right: 4pt;
  
   font-size: 9pt;
-}
+}/*
  .timesnewromanpsmt_6_0:before{
   content:" ";
 } 
@@ -112,13 +112,13 @@ content: "_____ ";
       text-indent: 0;
   }
   
-  .timesnewromanpsmt_6_0::footnote-marker {
+ /*  .timesnewromanpsmt_6_0::footnote-marker {
       content: counter(footnote);
       font-size: 8pt;
       vertical-align: super;
-  }
+  } */
   
-  .timesnewromanpsmt_9_0::footnote-call {
+  .timesnewromanpsmt_6_0::footnote-call {
       content: counter(footnote);
       font-size: 8pt;
       vertical-align: super;
@@ -219,7 +219,7 @@ html {
     text-rendering: optimizeLegibility;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    counter-reset: footnote;
+    /* counter-reset: footnote; */
   }
 html body { background-color: transparent!important;}
 body {
