@@ -219,6 +219,7 @@ html {
     text-rendering: optimizeLegibility;
     overflow-wrap: break-word;
     word-wrap: break-word;
+    counter-reset: footnote;
   }
 html body { background-color: transparent!important;}
 body {
