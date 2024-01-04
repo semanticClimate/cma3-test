@@ -100,7 +100,7 @@ content: "_____ ";
   }*/
   .timesnewromanpsmt_9_0, .timesnewromanpsmt_9_0_i {
     font-size:9.96pt!important;
-    float: footnote;
+      float: footnote;
       font-size: 8pt;
       counter-increment: footnote;
       text-indent: 0;
@@ -112,18 +112,17 @@ content: "_____ ";
       text-indent: 0;
   }
   
- /*  .timesnewromanpsmt_6_0::footnote-marker {
+ .timesnewromanpsmt_6_0::footnote-marker {
       content: counter(footnote);
       font-size: 8pt;
-      vertical-align: super;
-  } */
+      background: blue;
+  } 
   
   .timesnewromanpsmt_6_0::footnote-call {
-      content: counter(footnote);
-      font-size: 8pt;
-      vertical-align: super;
-      display: inline;
-      line-height: 1;
+    background: red;
+    font-size: 0.8;
+    vertical-align: super;
+    line-height: 0;
   }
 /*Page size*/
 @page {
