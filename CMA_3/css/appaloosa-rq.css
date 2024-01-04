@@ -112,13 +112,13 @@ content: "_____ ";
       text-indent: 0;
   }
   
- .timesnewromanpsmt_6_0::footnote-marker {
+ ::footnote-marker {
       content: counter(footnote);
       font-size: 8pt;
       background: blue;
   } 
   
-  .timesnewromanpsmt_6_0::footnote-call {
+  ::footnote-call {
     background: red;
     font-size: 0.8;
     vertical-align: super;
