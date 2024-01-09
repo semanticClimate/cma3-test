@@ -40,6 +40,7 @@ div {
   margin:24pt 0 24pt -30pt!important;
   background-color: transparent!important;
   display: inline-block;
+  page-break-after: avoid;
 }
 div > span.chapter + .subchapter {
   margin:0pt 0 24pt -30pt!important;
@@ -98,6 +99,9 @@ content: "_____ ";
 /*body>div>.timesnewromanpsmt_6_0+.timesnewromanpsmt_9_0 {
    background-color: violet; 
   }*/
+  .section {
+    counter-reset: footnote;
+  }
   .timesnewromanpsmt_9_0, .timesnewromanpsmt_9_0_i {
     font-size:9.96pt!important;
       float: footnote;
@@ -115,13 +119,14 @@ content: "_____ ";
  ::footnote-marker {
       content: counter(footnote);
       font-size: 8pt;
-      background: blue;
+      margin-right: 5px;
+      background: rgb(132, 244, 132);
   } 
   
   ::footnote-call {
     background: red;
-    font-size: 0.8;
-    vertical-align: super;
+    font-size: 8pt;
+    vertical-align: super; 
     line-height: 0;
   }
 /*Page size*/
