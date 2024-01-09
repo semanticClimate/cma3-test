@@ -108,8 +108,14 @@ content: "_____ ";
       font-size: 8pt;
       counter-increment: footnote;
       text-indent: 0;
-      display: inline;
+      /* display: inline; */
     }
+    .timesnewromanpsmt_9_0+.timesnewromanpsmt_9_i {
+      display: inline-block;
+      }
+      .timesnewromanpsmt_9_0_i+.timesnewromanpsmt_9_0 {
+        display: inline-block;
+        }
     .footnote {
       float: footnote;
       font-size: 8pt;
@@ -126,7 +132,7 @@ content: "_____ ";
   } 
   
   ::footnote-call {
-    background: red;
+    background: orange;
     content: counter(footnote);
     font-size: 8pt;
     vertical-align: super;
