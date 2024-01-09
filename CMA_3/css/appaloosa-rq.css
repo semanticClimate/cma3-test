@@ -19,7 +19,7 @@ div {
   /* margin-left: -16pt!important; */
   margin-bottom: 24pt!important; 
 }
-/* timesnewromanpsmt_10_0_i */
+
 .Decision {
   font-family: TimesNewRomanPSMT;
   font-size: 14.04pt;
@@ -121,6 +121,7 @@ content: "_____ ";
       font-size: 8pt;
       margin-right: 5px;
       background: rgb(132, 244, 132);
+      display:inline-block;
   } 
   
   ::footnote-call {
