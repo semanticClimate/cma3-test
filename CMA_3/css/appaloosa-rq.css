@@ -126,9 +126,11 @@ content: "_____ ";
   
   ::footnote-call {
     background: red;
+    content: counter(footnote);
     font-size: 8pt;
-    vertical-align: super; 
-    line-height: 0;
+    vertical-align: super;
+    display: inline;
+    line-height: 1;
   }
 /*Page size*/
 @page {
