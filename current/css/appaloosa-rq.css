@@ -74,10 +74,15 @@ text-align: justify!important;
   text-align: justify!important;
 }
 /* Footnotes */
- .timesnewromanpsmt_6_0 {
+.timesnewromanpsmt_6_0 {
   vertical-align: super;
   margin-right: 4pt;
   background: yellow;
+  font-size: 9pt;
+}
+ div>.timesnewromanpsmt_6_0 {
+  vertical-align: super;
+  margin-right: 4pt;
   font-size: 9pt;
 }/*
  .timesnewromanpsmt_6_0:before{
@@ -109,12 +114,12 @@ content: "_____ ";
       counter-increment: footnote;
       text-indent: 0; */
     }
-    .timesnewromanpsmt_9_0+.timesnewromanpsmt_9_i {
+   /*  .timesnewromanpsmt_9_0+.timesnewromanpsmt_9_i {
       display: inline-block;
       }
       .timesnewromanpsmt_9_0_i+.timesnewromanpsmt_9_0_i {
         display: inline-block;
-        }
+        } */
     .footnote {
       float: footnote;
       font-size: 8pt;
@@ -122,23 +127,28 @@ content: "_____ ";
       text-indent: 0;
       background:#82d8f5;
   }
+  /* Force line break in footnote sapn number */
+  .footnote>.timesnewromanpsmt_6_0:before {
+    content: "";
+    display: block;
+  }
   
- ::footnote-marker {
+/*  ::footnote-marker {
       content: counter(footnote);
       font-size: 8pt;
       margin-right: 5px;
       background: rgb(132, 244, 132);
       display:inline-block;
-  } 
+  }  */
   
-  ::footnote-call {
+  /* ::footnote-call {
     background: orange;
     content: counter(footnote);
     font-size: 8pt;
     vertical-align: super;
     display: inline;
     line-height: 1;
-  }
+  } */
 /*Page size*/
 @page {
     size: 210mm 297mm;
