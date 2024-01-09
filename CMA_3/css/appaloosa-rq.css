@@ -120,6 +120,7 @@ content: "_____ ";
       font-size: 8pt;
       counter-increment: footnote;
       text-indent: 0;
+      background:#82d8f5;
   }
   
  ::footnote-marker {
