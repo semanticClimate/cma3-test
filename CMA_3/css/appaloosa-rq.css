@@ -103,17 +103,16 @@ content: "_____ ";
     counter-reset: footnote;
   }
   .timesnewromanpsmt_9_0, .timesnewromanpsmt_9_0_i {
-    font-size:9.96pt!important;
+    /* font-size:9.96pt!important;
       float: footnote;
       font-size: 8pt;
       counter-increment: footnote;
-      text-indent: 0;
-      /* display: inline; */
+      text-indent: 0; */
     }
     .timesnewromanpsmt_9_0+.timesnewromanpsmt_9_i {
       display: inline-block;
       }
-      .timesnewromanpsmt_9_0_i+.timesnewromanpsmt_9_0 {
+      .timesnewromanpsmt_9_0_i+.timesnewromanpsmt_9_0_i {
         display: inline-block;
         }
     .footnote {
