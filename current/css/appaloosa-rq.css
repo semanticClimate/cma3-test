@@ -2,7 +2,7 @@
 
 /*body*/
   *{
-    font-family: TimesNewRomanPSMT;
+    font-family: Times New Roman;
   }
 
 
@@ -11,24 +11,31 @@ div {
   margin-bottom: 6pt!important;
   margin-left: 20mm!important;
   margin-right: 20mm!important;
-  font-family: TimesNewRomanPSMT!important;
+  font-family: Times New Roman!important;
   text-align: justify;
-}
-
-.timesnewromanpsmt_14_0_b {
-  /* margin-left: -16pt!important; */
-  margin-bottom: 24pt!important; 
+  line-height:1.20pt;
+  letter-spacing: 0.06pt;
 }
 
 .Decision {
-  font-family: TimesNewRomanPSMT;
   font-size: 14.04pt;
   font-weight: bold;
   color: #000;
-  /* margin-left: -16pt!important; */
   background-color: transparent!important;
   text-align: left!important;
-  margin-bottom: 16.15pt/* 24pt */!important; 
+  margin-bottom: 16.15pt!important; 
+  letter-spacing: 0.06pt;
+  line-height: 1.20pt;
+}
+.timesnewromanpsmt_14_0_b {
+  font-size: 14.04pt;
+  font-weight: bold;
+  color: #000;
+  text-align: left!important;
+  margin-bottom: 11.15pt!important; 
+  letter-spacing: -0.06pt;
+  line-height: 1.20pt;
+  
 }
 
 .subchapter, .chapter {
@@ -37,11 +44,14 @@ div {
   font-weight: bold;
   color: #000;
   text-align: left!important;
-  margin:24pt 0 24pt -30pt!important;
+  margin-bottom: 11.14pt;
+  /* margin:24pt 0 24pt -30pt!important; */
   background-color: transparent!important;
   display: inline-block;
   page-break-after: avoid;
+  letter-spacing: -0.01pt;
 }
+
 div > span.chapter + .subchapter {
   margin:0pt 0 24pt -30pt!important;
 }
@@ -246,8 +256,6 @@ html {
     /* counter-reset: footnote; */
   }
 html body { background-color: transparent!important;}
-body {
-  }
 
 
 
