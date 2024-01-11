@@ -162,7 +162,7 @@ content: "_____ ";
 /*Page size*/
 @page {
     size: 210mm 297mm;
-    margin-top: 30mm;
+    margin-top: 20mm;
     margin-bottom: 20mm;
   }
 
@@ -197,6 +197,7 @@ content: "_____ ";
     margin-bottom: 5mm;
     border-bottom: 1pt solid #000;
     color: #000;
+    vertical-align: bottom;
   }
   @bottom-left {
     content: counter(page);
