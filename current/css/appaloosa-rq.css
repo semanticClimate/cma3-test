@@ -123,7 +123,7 @@ div>span.timesnewromanpsmt_10_0_i:first-of-type{
 }
  .footnote {
       float: footnote;
-      font-size: 8pt;
+      font-size: 9pt;
       counter-increment: footnote;
       text-indent: 0;
       letter-spacing: 0.06pt;
@@ -169,11 +169,10 @@ div>span.timesnewromanpsmt_10_0_i:first-of-type{
     font-weight: bold;
     font-size: 9pt;
     letter-spacing: -0.02pt;
-    margin-top: 15mm;
+    margin-top: 18mm;
     margin-bottom: 5mm;
     border-bottom: 1pt solid #000;
     color: #000;
-    vertical-align: bottom;
   }
   @bottom-left {
     content: counter(page);
@@ -196,7 +195,7 @@ div>span.timesnewromanpsmt_10_0_i:first-of-type{
      font-size: 9pt;
      letter-spacing: -0.02pt;
      color: #000;
-     margin-top: 15mm;
+     margin-top: 18mm;
      margin-bottom: 5mm;
      border-bottom: 1pt solid #000;
   }
