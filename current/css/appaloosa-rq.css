@@ -134,7 +134,9 @@ div>span.timesnewromanpsmt_10_0_i:first-of-type{
     content: "";
     display: block;
   } 
-
+  .footnote>.timesnewromanpsmt_9_0 {
+  text-wrap: word-break;
+} 
 /*Page size*/
 @page {
     size: 210mm 297mm;
