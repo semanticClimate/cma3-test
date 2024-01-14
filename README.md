@@ -1,10 +1,13 @@
 # semanticClimate development info
 
+[Current working example](https://vivliostyle.vercel.app/#src=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/current/publication.json&style=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/current/css/appaloosa-rq.css)
+
 ## Discussion and Issues
 
-  - Link TBC
-  - Issues
-  - How to run Vivlio locally https://docs.google.com/document/d/1mmHGNsNxH3CWkpY1mv3gMN1-zs9L4Fm002CNW79UeiE/edit
+  - [GitHub Project](https://github.com/orgs/semanticClimate/projects/5/views/1) 
+  - [GitHub Issues](https://github.com/semanticClimate/cma3-test/issues)
+  - [Spreadsheet listing tasks and questions](https://docs.google.com/spreadsheets/d/1UJFG0M5x8IE9tXxMOzKKLQY01Yc-KLPT0GUQ8NxSAx8/edit#gid=1630230046)
+  - [How to run Vivlio locally](https://docs.google.com/document/d/1mmHGNsNxH3CWkpY1mv3gMN1-zs9L4Fm002CNW79UeiE/edit) 
 
 ./start-viewer
 
