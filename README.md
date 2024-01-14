@@ -11,6 +11,11 @@
 
 ./start-viewer
 
+## Resources
+
+  - As Word: [Paris Agreement](https://unfccc.int/files/meetings/paris_nov_2015/application/vnd.openxmlformats-officedocument.wordprocessingml.document/cp10a1_en.docx)
+  - 
+
 ## Tests 2024.01.10 RQ
 
   - Local - http://127.0.0.1:8000/viewer/#src=../current/publication.json&style=../current/css/appaloosa-rq.css
