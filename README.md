@@ -1,6 +1,6 @@
 # semanticClimate development info
 
-[Current working example](https://vivliostyle.vercel.app/#src=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/current/publication.json&style=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/current/css/appaloosa-rq.css)
+[Current working example](https://vivliostyle.vercel.app/#src=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/current/publication.json&style=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/current/css/theme.css)
 
 ## Discussion and Issues
 
@@ -19,7 +19,7 @@
 ## Tests 2024.01.10 RQ
 
   - Local - http://127.0.0.1:8000/viewer/#src=../current/publication.json&style=../current/css/appaloosa-rq.css
-  - Online - https://vivliostyle.vercel.app/#src=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/current/publication.json&style=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/current/css/appaloosa-rq.css
+  - Online - https://vivliostyle.vercel.app/#src=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/current/publication.json&style=https://raw.githubusercontent.com/semanticClimate/cma3-test/main/current/css/theme.css
 
 ## Tests 2023.12.12 RQ
 
