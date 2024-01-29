@@ -326,9 +326,9 @@ div.titlepage {
       font-family: Times New Roman;
       font-size:20.04pt;
       line-heigh: 1.2;
-      /* margin-bottom: 5mm; */
       padding-right: 3mm;
       text-align:right;
+      margin-top:23mm;
       vertical-align: bottom;
       width: 60mm;
       border-bottom: 0.5pt solid #000;   
