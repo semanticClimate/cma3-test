@@ -301,7 +301,7 @@ div.titlepage {
   @page SessionPre:first {
     margin-left: 22mm;
     margin-right: 22mm;
-    margin-top:28mm;
+    margin-top:28mm!important;
     margin-bottom:40mm;
     
     @top-left {
