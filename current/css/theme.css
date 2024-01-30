@@ -162,8 +162,8 @@ div>span.timesnewromanpsmt_10_0_i:first-of-type{
 /*Verso - left page*/ 
 
 @page: left {
-  margin-left: 20mm;
-  margin-right: 20mm;
+  margin-left: 22mm;
+  margin-right: 22mm;
   @top-left {
     content: "FCCC/PA/CMA/2021/10/Add.1";
     font-family: TimesNewRomanPSMT;
@@ -187,8 +187,8 @@ div>span.timesnewromanpsmt_10_0_i:first-of-type{
   /*Recto - right page*/
 
 @page: right {
-  margin-left: 20mm;
-  margin-right: 20mm;
+  margin-left: 22mm;
+  margin-right: 22mm;
   @top-right {
      content: "FCCC/PA/CMA/2021/10/Add.1";
      font-family: TimesNewRomanPSMT;
@@ -328,7 +328,6 @@ div.titlepage {
       line-heigh: 1.2;
       padding-right: 3mm;
       text-align:right;
-      margin-top:28mm;
       vertical-align: bottom;
       width: 60mm;
       border-bottom: 0.5pt solid #000;   
