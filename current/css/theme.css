@@ -1,43 +1,103 @@
-/*Appaloosa (Report) - publication style: Version: 10 Dec 2023 RQ
-/*Page size*/
-@page {
+@page{
   size: 210mm 297mm;
-  margin-top: 28mm;
+  margin-left: 22mm;
+  margin-right: 22mm;
+  margin-top:25mm;
   margin-bottom: 20mm;
-  margin-left: 20mm;
-  margin-right: 20mm;
 }
-/* SESSIONPRE PAGE */
-@page SessionPre:first {
-  margin-left: 20mm;
-  margin-right: 20mm;
-  margin-top:28mm!important;
+/*Verso - left page*/ 
+
+@page: left {
+  @top-left {
+    content: "FCCC/PA/CMA/2021/10/Add.1";
+    font-family: TimesNewRomanPSMT;
+    font-weight: bold;
+    font-size: 9pt;
+    letter-spacing: -0.02pt;
+    /* margin-top: 18mm; */
+    vertical-align: bottom;
+    padding-bottom: 5px;
+    margin-bottom: 5mm;
+    border-bottom: 0.5pt solid #000;
+    color: #000;
+  }
+  @bottom-left {
+    content: counter(page);
+    font-weight: bold;
+    font-size: 9pt;
+    color: #000;
+    line-height: 1.2;
+    }
+  }
+  
+  /*Recto - right page*/
+  
+  @page: right {
+   @top-right {
+     content: "FCCC/PA/CMA/2021/10/Add.1";
+     font-family: TimesNewRomanPSMT;
+     font-weight: bold;
+     font-size: 9pt;
+     letter-spacing: -0.02pt;
+     color: #000;
+     vertical-align: bottom;
+     padding-bottom: 5px; 
+     margin-bottom: 5mm;
+     border-bottom: 0.5pt solid #000;
+  } 
+  
+  @bottom-right {
+    content: counter(page);
+    font-family: TimesNewRomanPSMT;
+    font-weight: bold;
+    font-size: 9pt;
+    color: #000;
+    line-height: 1.2;
+  }
+  }
+/* @page :left {
+  @top-left {
+    content: string(sess-code, first);
+  }
+}
+
+@page :right {
+  @top-right {
+    content: string(sess-code, first);
+  }
+} */
+@page SessionPre: first {
+  margin-left: 22mm;
+  margin-right: 22mm;
+  margin-top:25mm;
   margin-bottom:40mm;
   
   @top-left {
     content: element(logo)"United Nations"; 
     vertical-align: bottom;
     font-family: Times New Roman;
-    color:#000;
     font-size:14.04pt;
     line-heigh: 1.2;
-    /* margin-bottom: 5mm; */
+    margin-bottom: 0mm;
     border-bottom: 0.5pt solid #000;
     width:60mm;
-  }
+}
   @top-center {
     content:"";
     width:50mm;
+    margin-bottom: 0mm;
     border-bottom: 0.5pt solid #000; 
   }
   @top-right {
     content: "FCCC" element(sessionCode);
-    vertical-align: bottom;
     font-family: Times New Roman;
+    font-weight: normal;
     font-size:20.04pt;
     line-heigh: 1.2;
+    margin-bottom: 0mm;
+    padding-bottom: 0px; 
     text-align:right;
-    background-color:red;
+    vertical-align: bottom;
     width: 60mm;
     border-bottom: 0.5pt solid #000;   
   }
@@ -50,7 +110,7 @@
     content: element(footerLeft);
   }
   
-  }
+}
 
 /*Cover*/ 
 
@@ -66,60 +126,6 @@
   @top-left { content: ""; }
 }  */
 
-
-/*Verso - left page*/ 
-
-@page: left {
-@top-left {
-  content: "FCCC/PA/CMA/2021/10/Add.1";
-  font-family: TimesNewRomanPSMT;
-  font-weight: bold;
-  font-size: 9pt;
-  letter-spacing: -0.02pt;
-  /* margin-top: 18mm; */
-  vertical-align: bottom;
-  padding-bottom: 5px;
-  margin-bottom: 5mm;
-  border-bottom: 1pt solid #000;
-  color: #000;
-}
-@bottom-left {
-  content: counter(page);
-  font-weight: bold;
-  font-size: 9pt;
-  color: #000;
-  line-height: 1.2;
-  }
-}
-
-/*Recto - right page*/
-
-@page: right {
-@top-right {
-   content: "FCCC/PA/CMA/2021/10/Add.1";
-   font-family: TimesNewRomanPSMT;
-   font-weight: bold;
-   font-size: 9pt;
-   letter-spacing: -0.02pt;
-   color: #000;
-   /* margin-top: 18mm; */
-   vertical-align: bottom;
-   padding-bottom: 5px;
-   margin-bottom: 5mm;
-   border-bottom: 1pt solid #000;
-}
-
-@bottom-right {
-  content: counter(page);
-  font-family: TimesNewRomanPSMT;
-  font-weight: bold;
-  font-size: 9pt;
-  color: #000;
-  line-height: 1.2;
-}
-}
-
-
 /*Blank page*/ 
 
 @page: blank {
@@ -129,6 +135,7 @@
   @top-left {content: normal;}
   @top-right {content: normal;}
 }
+
 /*body*/
   *{
     font-family: "Times New Roman", Times, serif;
