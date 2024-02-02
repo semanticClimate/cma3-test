@@ -9,10 +9,7 @@
     "author": "United Nations Framework Convention on Climate Change (UNFCCC)",
     "inLanguage": "en",
     "readingOrder": [ 
-      {
-        "url": "LEAD/split.html",
-        "rel": "contents"
-      },
+      "LEAD/split.html",
       "Decision_1_CMA_3/split.html",
       "Decision_2_CMA_3/split.html",
       "Decision_3_CMA_3/split.html",
@@ -23,7 +20,7 @@
             "type": [
                 "LinkedResource"
             ],
-            "url": "css/appaloosa.css"
+            "url": "css/theme.css"
         },
         {
           "type": [
